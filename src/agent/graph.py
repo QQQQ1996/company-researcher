@@ -31,8 +31,8 @@ claude_3_5_sonnet = ChatAnthropic(
 )
 
 # Search
-
-tavily_async_client = AsyncTavilyClient()
+TAVILY_API_KEY = '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'
+tavily_async_client = AsyncTavilyClient(TAVILY_API_KEY)
 
 
 class Queries(BaseModel):
