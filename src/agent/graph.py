@@ -27,7 +27,7 @@ rate_limiter = InMemoryRateLimiter(
     max_bucket_size=10,  # Controls the maximum burst size.
 )
 claude_3_5_sonnet = ChatAnthropic(
-    model="claude-3-5-sonnet-latest", temperature=0, rate_limiter=rate_limiter,  api_key = "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"
+    model="claude-3-5-sonnet-latest", temperature=0, rate_limiter=rate_limiter,  api_key = "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"
 )
 
 # Search
