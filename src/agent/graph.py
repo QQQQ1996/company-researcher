@@ -26,12 +26,14 @@ rate_limiter = InMemoryRateLimiter(
     check_every_n_seconds=0.1,
     max_bucket_size=10,  # Controls the maximum burst size.
 )
+
+ANTHROPIC_API_KEY='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'
 claude_3_5_sonnet = ChatAnthropic(
     model="claude-3-5-sonnet-latest", temperature=0, rate_limiter=rate_limiter,  api_key = ANTHROPIC_API_KEY
 )
 
 # Search
-#TAVILY_API_KEY = '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'
+TAVILY_API_KEY = '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'
 tavily_async_client = AsyncTavilyClient(TAVILY_API_KEY)
 
 
